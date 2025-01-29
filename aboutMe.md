@@ -12,3 +12,5 @@ end
 game.Workspace.aboutMe.Activated:Connect(function()
 	funfact()
 end)
+
+--about me written in Lua!
