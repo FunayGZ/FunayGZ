@@ -1,3 +1,14 @@
-i like to script in Lua!!!
+local facts = {
+	"am fluent in Lua!",
+	"am learning Python!",
+	"suck at sfm!",
+	"have been modeling in blender for 1.5 years!",
+}
 
-looking into working on steam workshop items and other modding programs
+local function funfact()
+	print(facts[math.random(1,4)])
+end
+
+game.Workspace.aboutMe.Activated:Connect(function()
+	funfact()
+end)
